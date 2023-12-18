@@ -4,13 +4,14 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ArticlePage from './pages/ArticlePage';
 import ArticlesListPage from './pages/ArticlesListPage';
+import NavBar from './NavBar';
 
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <h1>Doodle Blog</h1>
+      <NavBar />
       <div id="page-body">
         <Routes>
           <Route path="/" element={<HomePage />} />
